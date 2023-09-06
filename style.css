@@ -1,0 +1,40 @@
+*::before,
+*::after,
+* {
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: grid;
+    place-content: center;
+    background-color: #6d7691;
+}
+
+.calculator {
+    width: 350px;
+    height: 280px;
+}
+
+.display {
+    height: 5rem;
+    background-color: #000;
+}
+
+.keys {
+    height: 100%;
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+}
+
+.operator {
+    background-color: #6d7691;
+}
+
+.equal {
+    background-color: #ff6600;
+    grid-area: 2 / 4 / 6/ 5;
+}
