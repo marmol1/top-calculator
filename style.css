@@ -22,12 +22,21 @@ body {
 .display {
     height: 5rem;
     background-color: #000;
+    color: #ff6600;
+    font-size: 2rem;
+    text-align: right;
 }
 
 .keys {
     height: 100%;
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    gap: 10px;
+    background-color: #000;
+}
+button {
+    cursor: pointer;
+    border: none;
 }
 
 .operator {
@@ -37,4 +46,8 @@ body {
 .equal {
     background-color: #ff6600;
     grid-area: 2 / 4 / 6/ 5;
+}
+
+.equal:active {
+    background-color: #ff8330;
 }
